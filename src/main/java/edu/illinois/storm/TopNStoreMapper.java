@@ -24,6 +24,7 @@ public class TopNStoreMapper implements RedisStoreMapper {
     /* ----------------------TODO-----------------------
     Task: define which part of the tuple as the key
     ------------------------------------------------- */
+    return tuple.getStringByField("top-N");
 
 		// End
   }
@@ -33,6 +34,7 @@ public class TopNStoreMapper implements RedisStoreMapper {
     /* ----------------------TODO-----------------------
     Task: define which part of the tuple as the value
     ------------------------------------------------- */
+    return tuple.getStringByField("top_n_words");
 
 		// End
   }
