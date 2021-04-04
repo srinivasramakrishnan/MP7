@@ -42,8 +42,7 @@ class TopNFinderBolt(storm.BasicBolt):
         
         top_n_list = [x[0] for x in top_n_values]
         top_n_words = ", ".join(top_n_list)
-        storm.emit([top_n, top_n_words]) 
-        pass
+        storm.emit([top_n, top_n_words])
         # End
 
 
